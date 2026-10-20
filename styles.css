@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #c3d9fa;
+    color: #0c0c0c;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #1b3249;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #0c0a0a;
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+.tarjeta {
+    background-color: #d8e4fa;
+    padding: 20px;                
+    margin: 10px;                 
+    border-radius: 12px;         
+    box-shadow: 0 4px 8px rgba(68, 65, 245, 0.404); 
+    width: 250px;
+    text-align: center;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(39, 112, 223, 0.897);
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    color: #030c42;
+}
+
+.tarjeta p {
+    font-size: 0.9rem;
+    color: #383838;
+    margin-bottom: 15px;
+}
+
+.tarjeta a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.tarjeta a:hover {
+    background-color: #2980b9;
+}
