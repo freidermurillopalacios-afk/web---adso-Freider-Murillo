@@ -1,0 +1,76 @@
+body {
+    font-family: "poppins", arial, sans-serif;
+    background-color: #c3d9fa;
+    color: #0c0c0c;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #1b3249;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #0c0a0a;
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+.contenedor .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+.tarjeta {
+    background-color: #d8e4fa;
+    padding: 25px;                
+    margin: 10px;                 
+    border-radius: 12px;         
+    box-shadow: 0 4px 8px rgba(7, 5, 131, 0.404); 
+    width: 250px;
+    text-align: center;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 6px 12px rgba(5, 56, 134, 0.897);
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    color: #040b2e;
+}
+
+.tarjeta p {
+    font-size: 0.9rem;
+    color: #383838;
+    margin-bottom: 15px;
+}
+
+.tarjeta a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #0380d4;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.tarjeta a:hover {
+    background-color: #024572;
+}
+
+/* Padding es el espacio blanco que se encuentra entre la foto y el marco.
+Margin el espacio en la pared que hay entre un cuadro y otro. */
