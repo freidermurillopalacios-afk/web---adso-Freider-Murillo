@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Formulario de Inscripcion</h1>
+        <form id="formInscripcion">
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required min="3">
+                    <small id="error-nombre" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="documento">Documento</label>
+                    <input type="text" id="documento" name="documento" inputmode="numeric" minlength="6" maxlength="10" required>
+                    <small id="error-documento" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <small id="error-correo" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Celular</label>
+                    <input type="tel" id="telefono" name="telefono" required
+                    pattern="3[0-9]{9}" title="10 dígitos que empiecen por 3" maxlength="10">
+                    <small id="error-telefono" class="error"></small>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Curso</legend>
+
+                <div class="campo">
+                    <label for="programa">Programa</label>
+                    <select id="programa" name="programa" required>
+                        <option value="">Elige un curso</option>
+                        <option value="excel">Excel Básica</option>
+                        <option value="ingles">Inglés Principiante</option>
+                        <option value="programacion">Programación Web</option>
+                    </select>
+                    <small id="error-programa" class="error"></small>
+                </div>
+            </fieldset>
+
+                <fieldset class="grupo">
+                    <legend>Jornada</legend>
+                    <label class="opcion">
+                        <input type="radio" name="jornada" value="mañana" required> Mañana
+                    </label>
+                    <label class="opcion">
+                        <input type="radio" name="jornada" value="tarde"> Tarde
+                    </label>
+                    <label class="opcion">
+                        <input type="radio" name="jornada" value="noche"> Noche
+                    </label>
+                    <small id="error-jornada" class="error"></small>
+            
+                <div class="campo">
+                    <label class="opcion">
+                        <input type="checkbox" id="terminos" name="terminos" required> Autorización de datos
+                    </label>
+                    <small id="error-terminos" class="error"></small>
+                </div>
+            </fieldset>
+            <button type="submit" class="boton">Inscribirme</button>
+        </form>
+        <section id="resumen"></section>
+    </main>
+</body>
+</html>
