@@ -1,0 +1,113 @@
+:root {
+    --fondo: #c3d9fa;
+    --texto-principal: #0c0c0c;
+    --titulo-h1: #1b3249;
+    --texto-parrafo: #0c0a0a;
+    --tarjeta-fondo: #d8e4fa;
+    --sombra-tarjeta: 0 4px 8px rgba(7, 5, 131, 0.404);
+    --sombra-hover: 0 6px 12px rgba(5, 56, 134, 0.897);
+    --color-h3: #040b2e;
+    --texto-tarjeta-p: #383838;
+    --boton-fondo: #0380d4;
+    --boton-texto: #ffffff;
+    --boton-hover: #024572;
+}
+
+
+body {
+    font-family: "poppins", arial, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto-principal);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: var(--titulo-h1);
+    margin-bottom: 8px;
+}
+
+header p {
+    color: var(--texto-parrafo);
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+.contenedor .tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+    justify-items: center;
+}
+
+.tarjeta {
+    background-color: var(--tarjeta-fondo);
+    padding: 25px;                  
+    border-radius: 12px;           
+    box-shadow: var(--sombra-tarjeta);  
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    margin: 15px; 
+
+}
+
+.tarjeta:hover {
+    box-shadow: var(--sombra-hover);
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    color: var(--color-h3);
+}
+
+.tarjeta p {
+    font-size: 0.9rem;
+    color: var(--texto-tarjeta-p);
+    margin-bottom: 15px;
+}
+
+.tarjeta a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--boton-fondo);
+    color: var(--boton-texto);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.tarjeta a:hover {
+    background-color: var(--boton-hover);
+}
+
+@media (min-width: 768px) {
+    .contenedor .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenedor .tarjetas {
+        grid-template-columns: repeat(3, 1fr);
+    }   
+}
+
+/* Padding es el espacio blanco que se encuentra entre una foto puede ser y el marco.
+Margin el espacio que hay entre un cuadro y otro. */
+
+
+/* Explicación de Mobile First para la tarea */
+/* Mobile First: Es la estrategia de diseño y desarrollo web donde primero se diseña y programa pensando en los 
+dispositivos pequeños (celulares), usando los estilos base sin condiciones, y luego se añaden media queries para 
+pantallas más grandes (como computadores). */
