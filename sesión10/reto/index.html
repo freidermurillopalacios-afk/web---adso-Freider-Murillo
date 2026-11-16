@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Estilos</title>
+    <link rel="stylesheet" href="kit.css">
+</head>
+<body> 
+    <main class="tarjeta">
+        <h1>🎨 Mi Guía de Estilos</h1>
+        <p>Este documento reúne los componentes base del sistema de diseño para el proyecto. <a href="#">nuestra documentación</a> para más detalles.</p>
+        <small>Versión 1.0.0 del componente kit.</small>
+
+        <h2>1. Paleta de Colores</h2>
+        <div class="muestras">
+            <div class="muestra muestra-principal"><span>--principal</span></div>
+            <div class="muestra muestra-peligro"><span>--peligro</span></div>
+            <div class="muestra muestra-aviso"><span>--aviso</span></div>
+            <div class="muestra muestra-info"><span>--info</span></div>
+            <div class="muestra muestra-texto"><span>--texto</span></div>
+        </div>
+
+        <h2>2. Tipografía y Encabezados</h2>
+        <h3>Encabezado de Nivel 3</h3>
+        <p>Este es un párrafo de ejemplo que contiene texto estándar para evaluar la legibilidad.</p>
+
+        <h2>3. Botones</h2>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+            <button class="boton">Principal</button>
+            <button class="boton boton-secundario">Secundario</button>
+            <button class="boton boton-peligro">Peligro</button>
+            <button class="boton" disabled>Deshabilitado</button>
+        </div>
+
+        <h2>4. Alertas e Insignias</h2>
+        <div class="alerta alerta-exito">Alerta de éxito: Operación realizada correctamente.</div>
+        <div class="alerta alerta-error">Alerta de error: Algo salió mal.</div>
+        <div class="alerta alerta-aviso">Alerta de aviso: Precaución con esta acción.</div>
+        <div class="alerta alerta-info">Alerta de información: Nuevos datos disponibles.</div>
+
+        <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+            <span class="insignia insignia-nuevo">Nuevo</span>
+            <span class="insignia insignia-oferta">Oferta</span>
+            <span class="insignia insignia-agotado">Agotado</span>
+        </div>
+
+        <h2>5. Estados</h2>
+        
+        <div style="margin-bottom: 1rem;">
+            <p><strong>Estado cargando:</strong></p>
+            <div class="cargando">Cargando datos del servidor...</div>
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+            <p><strong>Texto con estado .hecha:</strong></p>
+            <span class="hecha">Esta tarea ya fue completada anteriormente.</span>
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+            <label for="campoError"><strong>Campo de formulario con error:</strong></label>
+            <input type="text" id="campoError" class="error" value="Texto inválido">
+            <small class="error">El formato ingresado no es correcto.</small>
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+            <p><strong>Botón con estado .activo:</strong></p>
+            <button class="boton activo">Pestaña Activa</button>
+        </div>
+
+        <div>
+            <p><strong>Párrafo con clase .oculto:</strong></p>
+            <p class="oculto">Este texto está oculto mediante la clase .oculto.</p>
+        </div>
+    </main>
+</body>
+</html>

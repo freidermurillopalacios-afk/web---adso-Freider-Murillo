@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis tareas</title>
+    <link rel="stylesheet" href="kit.css">
+</head>
+<body>
+    <main class="app-tareas tarjeta">
+        <header class="app-tareas-encabezado">
+            <h1>✅ Mis tareas</h1>
+            <button class="boton boton-secundario" aria-label="Cambiar tema">🌙</button>
+        </header>
+
+        <form class="app-tareas-form">
+            <label for="nuevaTarea" class="oculto-visual">Nueva tarea</label>
+            <input type="text" id="nuevaTarea" placeholder="Escribe una tarea...">
+            <button type="submit" class="boton">Agregar</button>
+        </form>
+        <p class="alerta alerta-error oculto">⚠️ Escribe una tarea antes de agregar.</p>
+
+        <ul class="lista-tareas">
+            <li class="tarea hecha">
+                <span>Trabajar</span>
+                <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+            </li>
+            <li class="tarea ">
+                <span>Estudiar</span>
+                <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+            </li>
+            <li class="tarea">
+                <span>Colaborar en la casa</span>
+                <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+            </li>
+            <li class="tarea">
+                <span>Cocinar</span>
+                <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+            </li>
+            <li class="tarea hecha">
+                <span>Lavar la ropa</span>
+                <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+            </li>
+            <li class="tarea">
+                <span>Ayudar en el negocio familiar</span>
+                <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+            </li>
+        </ul>
+
+        <p class="contador">2 tareas pendientes de 6</p>
+    </main>
+</body>
+</html>
