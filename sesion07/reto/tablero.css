@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f2f4f7;
+  color: #1f2933;
+}
+
+.app {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 220px 1fr 260px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "encabezado encabezado encabezado"
+    "menu       contenido  alertas"
+    "pie        pie        pie";
+}
+
+.app-encabezado {
+  grid-area: encabezado;
+  padding: 1rem 2rem;
+  background-color: #990303;
+  color: #ffffff;
+}
+
+.app-menu {
+  grid-area: menu;
+  padding: 1.5rem 1rem;
+  background-color: #331f1f;
+}
+
+.app-contenido {
+  grid-area: contenido;
+  padding: 2rem;
+}
+
+.app-alertas {
+  grid-area: alertas;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-left: 1px solid #e4e7eb;
+}
+
+.app-pie {
+  grid-area: pie;
+  padding: 0.5rem 2rem;
+  background-color: #e4e7eb;
+  font-size: 0.85rem;
+}
+
+.logo {
+  margin: 0;
+  font-weight: 600;
+}
+
+.app-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-menu a {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.app-menu a:hover {
+  background-color: #374151;
+}
+
+.indicadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.indicador {
+  padding: 1.25rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.indicador .titulo {
+  margin: 0;
+  color: #52606d;
+  font-size: 0.9rem;
+}
+
+.indicador .valor {
+  margin: 0.25rem 0 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.galeria-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.galeria-productos figure {
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.galeria-productos img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.galeria-productos figcaption {
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1f2933;
+}
+
+/* Elemento destacado de la galería (ocupa 2 columnas) */
+.galeria-productos .destacado {
+  grid-column: span 2;
+}
+
+.galeria-productos .destacado img {
+  height: 220px;
+}
+
+/* Panel de alertas */
+.app-alertas h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #c53030;
+}
+
+.lista-alertas {
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #52606d;
+}
+
+.lista-alertas li {
+  margin-bottom: 0.75rem;
+}
