@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante el propio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md sticky-top border-bottom border-warning-subtle">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#">RESTAURANTE EL PROPIO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-md-center gap-md-2">
+            <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#como-funciona">Cómo Funciona</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
+            <li class="nav-item mt-2 mt-md-0">
+              <button
+                type="button"
+                class="btn btn-primary btn-sm px-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPromo"
+              >
+                Promo de la noche
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <section class="row align-items-center g-4">
+        <div class="col-12 col-md-6">
+          <h1 class="display-5 fw-bold mb-3">La mejor comida preparada como en casa</h1>
+          <p class="lead mb-4">Preparada con amor todos los días con ingredientes frescos del mercado.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary" href="https://wa.me/573001234567">Pedir por WhatsApp</a>
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPromo">Ver promoción</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRveafBIxy0g0tWAS4t-qr276wZ7sWbEzb0aY79J_DoIg&s=10"
+            class="img-fluid rounded-4"
+            alt="Restaurante el Propio"/>
+        </div>
+      </section>
+    </main>
+
+    <section id="beneficios" class="container py-5">
+      <h2 class="text-center mb-4">¿Por qué elegirnos?</h2>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100">
+            <div class="card-body">
+              <h3 class="h5 card-title">🔥 100 % fresco</h3>
+              <p class="card-text">Preparada al instante y con la mejor sazón.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100">
+            <div class="card-body">
+              <h3 class="h5 card-title">🚚 Domicilio rápido</h3>
+              <p class="card-text">Llevamos tu almuerzo o desayuno caliente hasta tu puerta.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100">
+            <div class="card-body">
+              <h3 class="h5 card-title">🌱 Ingredientes locales</h3>
+              <p class="card-text">Apoyamos a los campesinos de la región.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="container py-5">
+      <h2 class="text-center mb-4">Cómo Funciona</h2>
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item">Revisa nuestro menú del día en el botón de WhatsApp.</li>
+        <li class="list-group-item">Elige tu plato favorito y escríbenos.</li>
+        <li class="list-group-item">Recibe tu pedido de forma inmediata en casa.</li>
+      </ol>
+    </section>
+
+    <section id="contacto" class="container py-5">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <form class="row g-3">
+        <div class="col-12 col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required />
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" name="correo" required />
+        </div>
+        <div class="col-12">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="py-4 mt-4 border-top border-warning-subtle">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="fw-semibold mb-0">Restaurante el propio</p>
+        <p class="mb-0">Calle 45 #30-12 | Tel: 300 123 4567</p>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="modalPromo" tabindex="-1" aria-labelledby="tituloPromo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-0">
+          <div class="modal-header border-bottom border-warning-subtle">
+            <h2 class="modal-title h6 fw-bold text-uppercase mb-0" id="tituloPromo">Promo especial de la casa</h2>
+
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-2">Todos los días hasta las 8:00 p. m.:</p>
+            <p class="fw-semibold mb-2">1 Plato casero del día + bebida natural + postre de cortesía.</p>
+            <p class="small mb-0">Válido para consumo en local o domicilio en la zona.</p>
+          </div>
+          <div class="modal-footer border-top border-warning-subtle justify-content-end gap-2">
+            <button type="button" class="btn btn-outline-primary btn-sm px-3" data-bs-dismiss="modal">CERRAR</button>
+            <a class="btn btn-primary btn-sm px-3" href="https://wa.me/573001234567"> PEDIR PROMO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
