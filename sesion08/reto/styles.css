@@ -11,13 +11,9 @@
   --radio: 12px;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+*, *::before, *::after {box-sizing: border-box;}
 
-html {
-  scroll-behavior: smooth;
-}
+html {scroll-behavior: smooth;}
 
 img {
   max-width: 100%;
@@ -94,9 +90,7 @@ body.oscuro {
   background-color: var(--tarjeta-fondo);
 }
 
-body, .encabezado, .beneficio {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+body, .encabezado, .beneficio {transition: background-color 0.3s ease, color 0.3s ease;}
 
 .hero {
   display: grid; 
@@ -162,9 +156,7 @@ body, .encabezado, .beneficio {
     text-align: left;
   }
 
-  .hero h1 {
-    font-size: 2.8rem;
-  } 
+  .hero h1 {font-size: 2.8rem;} 
 }
 
 @media (min-width: 1024px) {
